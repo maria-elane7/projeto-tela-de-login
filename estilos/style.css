@@ -10,7 +10,7 @@
 body,html{
     height:100vh;
     width:100vw;
-    background-color:blueviolet;
+    background-color:#031326;
 }
 
 main{
@@ -23,20 +23,21 @@ main{
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%,-50%);
+    
     height:500px;
     width:250px;
     overflow:hidden;
     background-color:white;
     border-radius:20px;
     box-shadow:0px 0px 10px rgba(0, 0, 0, 0.247);
+    transform:translate(-50%,-50%);
     transform:width .3s, height .3s;
     transition-timing-function: ease;
 }
 
 .imagem{
     display:block;
-    background:blueviolet url(../imagens/tela-login.jpg);
+    background:#031326 url(../imagens/tela-login.jpg);
     height:200px;
     background-position:left bottom;
     background-size: cover;
@@ -54,3 +55,87 @@ main{
 .formulario > p{
     font-size:.8em;
 }
+
+form > .campo{
+    display:block;
+    width: 100%;
+    height: 40px;
+    background-color: #031326;
+    border:1px solid #031326;
+    border-radius: 8px;
+    margin: 5px 0px;
+    padding: 3px;
+}
+label{
+    display:none;
+}
+
+.campo > i{
+    color:#F2F2F2;
+    font-size:1.3em;
+    padding:1.5px;
+}
+.campo > input{
+    width:calc(100% - 40px);
+    height:100%;
+    background-color: #A63D17;
+    border-radius:8px;
+    border:none;
+    outline: none;
+    font-size:1em;
+    padding:4px;
+
+
+}
+
+input::placeholder{
+    color:#03132685;
+}
+
+.campo > input:focus-within{
+    background-color: #F2F2F2;
+   
+}
+
+form >input[type=submit]{
+    display:block;
+    width:100%;
+    height:40px;
+    font-size:1em;
+    background-color: #F24F13;
+    color:#F2F2F2;
+    border:none;
+    border-radius:5px;
+    margin-bottom: 10px;
+    
+
+}
+
+form >input[type=submit]:hover{
+    background-color:#A63D17;
+}
+
+
+
+form a.botao{
+    display:block;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    border:2px solid #031326;
+    color:#031326;
+    padding:7px;
+    border-radius:5px;
+    
+}
+
+form a.botao:hover{
+    background-color: #A63D17;
+    color:#F2F2F2;
+}
+
+form a.botao > i{
+    font-size:.7em;
+    padding:3px;
+}
+
